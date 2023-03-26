@@ -1,0 +1,26 @@
+<html>
+   <body>
+      <b>UPLOAD SINGLE IMAGE</b>
+      <p></p>
+      <form action = "http://localhost:5000/upload_single" method = "POST" 
+         enctype = "multipart/form-data">
+         <input type = "file" name = "file"/>
+         <input type = "submit"/>
+      </form>
+      <b>UPLOAD SINGLE IMAGE FOR PAYLOAD</b>
+      <p></p>
+      <form action = "http://localhost:5000/upload_file_for_payload" method = "POST" 
+         enctype = "multipart/form-data">
+         <input type = "file" name = "file"/>
+         <input type = "submit"/>
+      </form>
+      <p></p>
+      <b>UPLOAD MULTIPLE IMAGES</b>
+      <p></p>
+      <form action = "http://localhost:5000/upload_multiple" method = "POST" 
+         enctype = "multipart/form-data">
+         <input type = "file" name = "file" multiple/>
+         <input type = "submit"/>
+      </form>
+   </body>
+</html>

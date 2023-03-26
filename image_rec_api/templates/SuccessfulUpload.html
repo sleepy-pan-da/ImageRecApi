@@ -1,0 +1,15 @@
+<html>
+	<body>
+		<form action = "http://localhost:5000" method = "GET">
+			<p>File uploaded successfully</p>
+			<button type = "submit">BACK</button>
+		</form>
+		<div>
+			<b>PAYLOAD</b>
+			{% for key, value in result.items() %}
+			<p>{{ key }}: {{ value }}</p>
+			<p></p>
+			{% endfor %}
+		</div>
+	</body>
+</html>
